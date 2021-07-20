@@ -14,7 +14,47 @@
         </header>
         <div>
             <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/><br>
-            <a href="payment.html">Book Now</a>
+            <div >
+                <!--margin-left: 4%; margin-right: 4%; margin-bottom: 1%;-->
+                <form action="payment.html" method="GET" target="_self" autocomplete="off">
+      
+      
+                  <ul style="list-style-type: none;">
+                    <li class="listSty">
+                      <label class="labelSty" for="adult">Adults:</label>
+                      <input class="inputSty" id="adults" type="number" id="adult" onfocus="call()" onchange="call()" name="adult" min="1" required autocomplete="off"
+                        value="1"><br />
+                    </li>
+      
+                    <li class="listSty">
+                      <label class="labelSty" for="name">Name:</label>
+                      <input class="inputSty" type="text" id="name" name="name1" required autocomplete="off"><br />
+                    </li>
+      
+                    <li class="listSty">
+                      <label class="labelSty" for="date1">From Date:</label>
+                      <input class="inputSty"   type="date" id="fromDate" name="date1" onchange="call()" required autocomplete="off" /><br />
+                    </li>
+      
+                    <li class="listSty">
+                      <label class="labelSty" for="date2">To Date:</label>
+                      <input class="inputSty toDate" type="date" name="date2" id="toDate" onchange="call()" required autocomplete="off" /><br />
+                    </li>
+      
+                    <li class="listSty">
+                      <label class="labelSty" for="price">Total:</label>
+                      <input class="inputSty total" type="text" name="price" id="price" autocomplete="off" readonly /><br />
+                    </li>
+      
+                    <li >
+                      <a href="payment.html" target="_self">
+                        <button type="submit" class="btn btn-outline-success" style="padding:3px" id="bookNow">Book
+                          Now</button>
+                      </a>
+                    </li>
+                  </ul>
+                </form>
+              </div>
             <h2>Radisson Blu Hotel</h2>
             <h4>RATING</h4>
             <P>5 star</P>
