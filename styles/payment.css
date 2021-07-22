@@ -1,0 +1,21 @@
+body{
+    background-color:#e0e0e0;
+}
+.c1{
+    background-color: rosybrown;
+}
+#divimg{
+    background-color: rgb(132,136,139);
+    height: 20% relative;
+    width: 50%;
+    margin:2% auto;
+}
+#div1{
+margin-left: 2%;
+}
+#div2{
+margin:2%;
+border:1px solid black;
+border-radius: 5px;
+padding:1% 1%;
+}
