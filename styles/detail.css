@@ -1,16 +1,36 @@
-body{
-    margin:0%;
+
+body {
+    width : 100%;
+    height: 100%;
+    margin : 0px;
     background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
 }
-.c1{
-    background-color: rosybrown;
+#full{
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
-#c2{
-    margin: 2% 4% 0%;
+.hotelImage {
+    height: 500px;
+    width: 500px;
+    margin: 2% 4% 0% 4%;
 }
-#c3{
-    margin: 0% 1% 1%;
+
+.form{
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-bottom: 1%;
 }
-#c4{
-    margin: 0% 4% 2%;
+#details{
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+
+}
+.content{
+    padding-bottom: 3%;
+}
+#available{
+    margin-left: 3.5%;
 }

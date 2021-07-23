@@ -1,90 +1,66 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>Detail</title>
+        <title>detail</title>
+        <link rel="stylesheet" href="styles/common.css">
         <link rel="stylesheet" href="styles/detail.css">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="c1">
-            
-          <div>
-            <a href="index.html" >
-                <img src="assests/images/logo.png" href="index.html" id="imglogo" alt="logo" height="60px" width="60px"/>
-            </a>
-            <a href="login.html" target="_blank">Login</a>
-          </div>
-        </header>
-        <div>
-            
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" id="c2"style="height: 500px; width: 500px;"/><br>
-            <div id="c3">
-                <!--margin-left: 4%; margin-right: 4%; margin-bottom: 1%;-->
-                <form action="payment.html" method="GET" target="_self" autocomplete="off">
-      
-      
-                  <ul style="list-style-type: none;">
-                    <li class="listSty">
-                      <label class="labelSty" for="adult">Adults:</label>
-                      <input class="inputSty" id="adults" type="number" id="adult" onfocus="call()" onchange="call()" name="adult" min="1" required autocomplete="off"
-                        value="1"><br />
-                    </li>
-      
-                    <li class="listSty">
-                      <label class="labelSty" for="name">Name:</label>
-                      <input class="inputSty" type="text" id="name" name="name1" required autocomplete="off"><br />
-                    </li>
-      
-                    <li class="listSty">
-                      <label class="labelSty" for="date1">From Date:</label>
-                      <input class="inputSty"   type="date" id="fromDate" name="date1" onchange="call()" required autocomplete="off" /><br />
-                    </li>
-      
-                    <li class="listSty">
-                      <label class="labelSty" for="date2">To Date:</label>
-                      <input class="inputSty toDate" type="date" name="date2" id="toDate" onchange="call()" required autocomplete="off" /><br />
-                    </li>
-      
-                    <li class="listSty">
-                      <label class="labelSty" for="price">Total:</label>
-                      <input class="inputSty total" type="text" name="price" id="price" autocomplete="off" readonly /><br />
-                    </li>
-      
-                    <li >
-                      <a href="payment.html" target="_self">
-                        <button type="submit" class="btn btn-outline-success" style="padding:3px" id="bookNow">Book
-                          Now</button>
-                      </a>
-                    </li>
-                  </ul>
-                </form>
-              </div>
-            <div id="c4">  
-              <h2>Radisson Blu Hotel</h2>
-              <h4>RATING</h4>
-              <P>5 star</P>
-              <h4>AMENITIES</h4>
-              <ul>
-                  <li>Room Service</li>
-                  <li>Restaurant</li>
-                  <li>Business center</li>
-                  <li>Fitness center</li>
-                  <li>Pool</li>
-              </ul>
-              <h5>DESCRIPTION</h5>
-              <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit atque minima repellat dolorem commodi voluptate perspiciatis earum facilis, sed soluta rem! Aliquid saepe ipsum quas, voluptatem laborum rerum ipsam quisquam.</P>
-            </div>
-        </div>
-        <footer class="c1">
-            <div>
-                <a href="contact.html" target="_blank">CONTACT US</a><br>
-                <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" height="20px" width="22px"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" height="20px" width="22px"></a>
-                <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" height="20px" width="22px"></a>
-                <p>&copy; 2020 ROOM SEARCH PVT.LTD</p>
-            </div>
-        </div>
-        </footer>
+    <div>
+    <div id="full">
+        <header>
+            <img class = "logo" src = "assests/images/logo.png">
+            <a href = "login.html" target="_blank" class="login">Login</a>
 
-    </body>
+        </header>
+        <div class="content">
+            <img class = "hotelImage" src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
+            
+            <form action="payment.html" class="form">
+                
+                <label for="adults">Adults:</label>
+                <input type = "number" id = "adults" name = "number" min = "1" required><br>
+                
+                <label for= "name">Name:</label>
+                <input type = "text" id ="name" name = "name" required><br>
+                
+                <label for = "from">From Date:</label>
+                <input type = "date" id = "from" name="from" required><br>
+               
+                <label for = "toDate">To Date:</label>
+                <input type = "date" id = "toDate" name ="toDate" required><br>
+                <label for = "total">Total</label>
+                <input type ="text" id = "total" name = "total" readonly="readonly"><br>
+                
+                <input type = "submit" value = "Book Now">
+            </form>
+            <div id = details>
+            <h2>Radisson Blu Hotel</h2><br>
+            <p>RATING</p><br>
+            <P>5 Star</P><br>
+            <P>AMENITIES</P><br>
+            <ul id="available">
+                <li>Room Service</li>
+                <li>Restaurant</li>
+                <li>Business center</li>
+                <li>Fitness center</li>
+                <li>Pool</li>
+            </ul>
+            <div><br>
+                <p><b>DESCRIPTION</b></p><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.um dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi.</p>
+            </div>
+        </div>
+        </div><br><br>
+        <footer>
+            <span><a href = "contact.html" target="_blank" id="contactus">Contact Us</a></span>
+            <span style="padding-left: 87%;">
+            <a href = "https://www.facebook.com" target="_blank"><img class ="social-icons" src = "assests/images/facebook.png"  ></a>
+            <a href = "https://www.instagram.com" target="_blank"><img class ="social-icons" src = "assests/images/instagram.png" ></a>
+            <a href = "https://www.twitter.com" target="_blank"><img class ="social-icons" src = "assests/images/twitter.png"></a>
+            </span>
+            <span style = "padding-left: 45%; " id="copyright"> © 2020 ROOM SEARCH PVT. LTD</span>
+        </footer>
+    </div>
+</body>
 </html>

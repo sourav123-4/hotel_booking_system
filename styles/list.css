@@ -1,10 +1,39 @@
-body{
-    background-color:#e0e0e0;
+.content{
+    /* padding-top: 5%;
+    padding-bottom: 5%; */
+    margin: 5%;
 }
-.c1{
-    background-color: rosybrown;
+
+.hotel-images {
+    height: 200px;
+    width: 250px;
 }
-.container1{
-    background-color: rgb(132,136,139);
+#map-view {
+    display: none;
+}
+.hotel-card {
+    margin: 2% 4%;
+    background-color: rgb(132, 136, 139);
     width: 40%;
+    display: inline-block;
+}
+
+#list-view > a {
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
+    text-align: center;
+}
+
+ul > li {
+    display: inline-block;
+    list-style-type: none;
+    font-weight: bold;
+    margin-right: 2%;
+}
+#main{
+     height: 100%;
+     width: 100%;
 }
